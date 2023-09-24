@@ -3,7 +3,7 @@ def CUSTOM_WORKSPACE="/tmp/jenkins/workingDir001"
 node  {
     checkout scm
 
-    stage "initialise" {
+    stage "init" {
         sh "echo checking for CUSTOM_WORKSPACE"
     }
 
