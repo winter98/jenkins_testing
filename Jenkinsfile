@@ -1,4 +1,4 @@
-def CUSTOM_WORKSPACE="/tmp/jenkins/workingDir001"
+def CUSTOM_WORKSPACE="/tmp/jenkins/workingDir002"
 
 node  {
     checkout scm
