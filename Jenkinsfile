@@ -5,6 +5,7 @@ node  {
 
     stage("init") {
         sh "echo checking for CUSTOM_WORKSPACE"
+        sh "[[ -d CUSTOM_WORKSPACE ]] || mkdir -p CUSTOM_WORKSPACE"
     }
 
     stage("building") {
