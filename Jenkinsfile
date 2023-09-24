@@ -4,8 +4,9 @@ node  {
     checkout scm
 
     stage "initialise" {
-        [[ -d $CUSTOM_WORKSPACE ]] || mkdir -p $CUSTOM)WORKSPACE
+        sh "[[ -d $CUSTOM_WORKSPACE ]] || mkdir -p $CUSTOM)WORKSPACE"
     }
+    
     stage "building" {
         sh "echo building"    
     }
