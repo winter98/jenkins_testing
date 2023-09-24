@@ -4,7 +4,7 @@ node  {
     checkout scm
 
     stage "initialise" {
-        sh "echo checking for ${CUSTOM_WORKSPACE}"
+        sh "echo checking for CUSTOM_WORKSPACE"
     }
 
     stage "building" {
