@@ -1,3 +1,9 @@
+def countToTen() {
+    for (int i = 1; i <= 10; i++) {
+        echo "${i}"
+    }
+}
+
 node { 
     stage('hello') {
         echo 'Hello World'
