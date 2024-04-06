@@ -1,8 +1,20 @@
 node {
-    stage('Count') {
-        steps { 
-            echo 'Counting...'
+    stage('Build') {
+        steps {
+            echo 'Building..'
+            // Here you can add build steps
         }
-        
+    }
+    stage('Test') {
+        steps {
+            echo 'Testing..'
+            // Here you can add test steps
+        }
+    }
+    stage('Deploy') {
+        steps {
+            echo 'Deploying....'
+            // Here you can add deploy steps
+        }
     }
 }
