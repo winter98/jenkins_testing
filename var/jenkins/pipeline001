@@ -6,6 +6,7 @@ pipeline {
                 git(branch: 'main', url: 'https://github.com/winter98/jenkins_testing.git', credentialsId: '78f4e464-d7a5-4a80-934a-8accfa244529')
                 dir('./var/jenkins') {
                     load 'jenkinsFile001'
+                    countToTen()
                 }
             }
         }
