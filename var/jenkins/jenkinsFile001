@@ -4,12 +4,12 @@ def countToTen() {
     }
 }
 
-node { 
-    stage('hello') {
+node {
+    stage('Count') {
         steps {
-            sh """
-            echo 'hello'
-            """
+            script {
+                countToTen()
+            }
         }
     }
 }
