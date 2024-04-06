@@ -1,5 +1,6 @@
 node { 
     stage('hello') {
-        sh 'echo hello'
+        steps {
+            echo 'hello'}
     }
 }
