@@ -7,5 +7,6 @@ def countToTen() {
 node { 
     stage('hello') {
         echo 'Hello World'
+        countToTen()
     }
 }
